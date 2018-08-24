@@ -37,8 +37,8 @@ To directly access the Linux server, the IP is the same as above (52.221.206.188
 * Forced key based login
 * Set up a firewall to only allow incoming traffic from ports 80, 2200 and 123. All outgoing traffic is allowed
 * Changed server time to UTC
-* Made a PostgreSQL user named cataloguser (password catalog)
-!!! TODO: Disabled PostgreSQL remote connections
+* Made a PostgreSQL user named cataloguser (password catalog) with less privileges
+* Verified that PostgreSQL remote connections are disabled
 
 ### App deployment configuration
 
@@ -56,5 +56,17 @@ To directly access the Linux server, the IP is the same as above (52.221.206.188
 
 * Google OAuth2: configured it to allow authentication requests from this site
 * xip.io: to create proper URI for Google authentication
-* Numerous websites for documentation, troubleshooting and inspiration. Mostly Stackoverflow and Udacity discussion, plus many random websites found on Google and also official documentations.
+* Udacity Linux Configuration videos
+* Udacity discussions
+* Main info on WSGI: http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/
+* General flow for the setup: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+* Some random tidbits: https://www.fullstackpython.com/wsgi-servers.html
+* Some more random info: http://www.bogotobogo.com/python/Flask/Python_Flask_HelloWorld_App_with_Apache_WSGI_Ubuntu14.php
+* For help with creating PostgreSQL databases and users: https://www.a2hosting.sg/kb/developer-corner/postgresql/managing-postgresql-databases-and-users-from-the-command-line
+* Database help: https://www.postgresql.org/docs/9.1/static/manage-ag-createdb.html
+* Virtual environments: https://modwsgi.readthedocs.io/en/develop/user-guides/virtual-environments.html
+* Debugging help: https://serverfault.com/questions/239614/wsgi-and-python-print-statements
+* For help with disabling remote logins in PostgreSQ: https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps
+* + random websites for minor details that cannot be traced back anymore
+
 
